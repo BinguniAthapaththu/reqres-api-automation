@@ -1,14 +1,8 @@
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.hasSize;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class GetUsersTest {
-
-    @BeforeClass
-    public void setup() {
-        baseURI = "https://reqres.in/api";
-    }
+public class GetUsersTest extends BaseTest{
     @Test
     public void GetUsersTest_ValidRequest(){
         given()

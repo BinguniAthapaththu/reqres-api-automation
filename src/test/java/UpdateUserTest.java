@@ -1,14 +1,9 @@
 import io.restassured.http.ContentType;
 import org.json.simple.JSONObject;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 
-public class UpdateUserTest {
-    @BeforeClass
-    public void setup(){
-        baseURI = "https://reqres.in/api";
-    }
+public class UpdateUserTest extends BaseTest{
     @Test
     public void UpdateUser_ValidRequest(){
         JSONObject request = new JSONObject();
