@@ -1,6 +1,5 @@
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.hasSize;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

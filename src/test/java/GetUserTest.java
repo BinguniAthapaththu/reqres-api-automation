@@ -1,17 +1,14 @@
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
 
 
 public class GetUserTest {
-
     @BeforeClass
-    public void setUp(){
+    public void setup(){
         baseURI = "https://reqres.in/api";
     }
-
     @Test
     public void GetUserTest_ValidRequest(){
         given()
